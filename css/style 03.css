@@ -1,0 +1,614 @@
+/* Start Main Rules*/
+
+* {
+    -webkit-box-sizing: border-box ;
+    -moz-box-sizing: border-box ;
+    box-sizing: border-box 
+}
+
+body {
+    font-family: Arial , Tahoma;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+      width: 1200px ;
+      margin: auto ; 
+      min-width: 1200px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.clearfix {clear: both} /* float اي حاجة معمول ليها */
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(49, 55, 61, .9);
+    width: 100%;
+    height: 100%;
+}
+
+.main-color {
+    color: #78e08f;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.header {
+    min-width: 1300px;
+}
+
+.table {
+    height: 100%;
+    display: table
+}
+
+.table-row {
+    display: table-row
+}
+
+.hidden {
+    display: none;
+}
+
+/* End Main Rules*/
+
+
+
+/* Start Header */
+
+.header {
+    background: url('../images/header_stock.png') no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;    
+    width: 100%;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.header  nav {
+    margin-top: 30px;
+    color: #DDD;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.header nav h2 {
+    float: left;
+    width: 50%;
+    font-weight: normal;
+}
+
+.header nav > span {
+    float: right;
+}
+
+.header nav > span:last-child {
+    margin-right: 10px;
+    font-size: 15px;
+    margin-top: 3px;
+}
+
+.header .box {
+    text-align: center;
+    font-size: 25px;
+    color: #DDD;
+}
+
+.header .box h1 {
+    font-size: 60px;
+    margin-bottom: 15px;
+    font-family: 'Bitter', serif;
+}
+
+.header .box button {
+    background: none;
+    border: 1px solid #DDD;
+    padding: 11px 30px;
+    border-radius: 6px;
+    color: #DDD;
+    outline: none;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: all .5s ease-in-out;
+    margin-bottom: 130px;
+
+}
+
+.header .box button:hover {
+    background-color: #78e08f;
+    color: #fff  ;
+}
+
+.header .box i {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    cursor: pointer;
+    font-size: 32px;
+}
+
+/* End Header */
+
+
+/* Start Features */
+
+.features {
+    overflow: hidden;
+    height: 500px;
+    text-align: center;
+}
+
+.features .item {
+    float: left;
+    width: 24.25%;
+}
+
+.features .item:not(:last-child) {
+    margin-right: 1%;
+}
+
+.features .item i {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #DDD;
+    border-radius: 50%;
+    line-height: 150px;
+    font-size: 40px;
+    color: #78e08f;
+    transition: all 0.5s ease-in-out;
+}
+
+.features .item i:hover {
+    background-color: #78e08f;
+    color: #fff;
+    border: 2px solid #78e08f;
+}
+
+.features .item h3 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        color: #666;
+}
+
+.features .item p {
+    line-height: 1.7;
+    color: #999;
+}
+/* End Features */
+
+
+/* Start Subscribe */
+
+.subscribe {
+    background: url('../images/subscribe.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 50px;
+    position: relative;
+    text-align: center;
+    line-height: 150px;
+}
+
+
+
+.subscribe input[type="email"] {
+   padding: 10px;
+   border-radius: 10px;
+   width: 45%;
+   outline: none;
+   margin-right: 2%;
+}
+
+.subscribe button {
+    background-color: #78e08f;
+    border: 2px solid #78e08f;
+    border-radius: 6px;
+    color: #fff;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 20%;
+    padding: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.subscribe button:hover {
+    background-color: #2ecc71;
+}
+
+
+/* .subscribe ::-webkit-input-placeholder {
+    font-size: 18px;
+}
+
+.subscribe ::-moz-input-placeholder {
+    font-size: 18px;
+} */
+/* End Subscribe */
+
+
+/* Start Our-Work */
+
+.our-work {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.our-work h2 {
+    color: #666;
+}
+
+.our-work h2 ~ p {
+    color: #888;
+    line-height: 1.7;
+    font-size: 14px;
+    margin-bottom: 80px;
+}
+
+.our-work .items-box {
+    overflow: hidden;
+}
+
+.our-work .items-box .hidden {
+    display: none;
+}
+
+.our-work .items-box .item {
+    float: left;
+    width: 30%;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-left: 1.3333%;
+    position: relative;
+    height: 400px;
+    
+}
+
+.our-work .items-box .item .over {
+    background-color: #78e08f;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+}
+
+.our-work .items-box .item .over h4 {
+    margin-top: 120px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 22px;
+
+}
+
+.our-work .items-box .item .over p {
+    line-height: 1.5;
+    color: #fff;
+    font-size: 14px;
+}
+
+.our-work .items-box .item .over button {
+    background: none;
+    border: 2px solid #DDD;
+    padding: 11px 30px;
+    border-radius: 6px;
+    color: #fff;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: all .5s ease-in-out;
+    margin-top: 20px;
+}
+
+.our-work .items-box .item .over button:hover {
+    background-color: #fff;
+    color: #78e08f ;
+    border: 2px solid #fff;
+}
+
+.our-work button {
+    background: none;
+    border: 2px solid #DDD;
+    padding: 11px 30px;
+    border-radius: 6px;
+    color: #666;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: all .5s ease-in-out;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+.our-work button:hover {
+    background-color: #78e08f;
+    color: #fff ;
+    border: 2px solid #78e08f
+}
+
+/* End Our-Work */
+
+
+/* Start Teatimonials */
+
+.testim {
+    background: url('../images/testimonials.png') no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;    
+    width: 100%;
+    height: 350px;
+    margin-bottom: 50px;
+    position: relative;
+    text-align: center;
+
+}
+
+.testim .client {
+    color: #fff;
+    font-size: 18px;
+    padding: 33px;
+}
+
+
+.testim .client img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.testim .client p {
+    line-height: 2;
+    font-style: italic;
+}
+
+.testim i {
+    position: absolute;
+    top: 50%;
+    color: #888;
+    cursor: pointer;
+
+}
+
+.testim i:hover {
+    color: #78e08f;
+}
+
+.testim .fa-chevron-right {
+    right: 20%;
+
+}
+
+.testim .fa-chevron-left {
+    left: 20%;
+}
+/* End Teatimonials */
+
+
+/* Start Our Team */
+
+.our-team {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.our-team h2 {
+    color: #666;
+}
+
+.our-team h2 ~ p {
+    color: #888;
+    line-height: 1.7;
+    font-size: 14px;
+    margin-bottom: 80px;
+}
+
+.our-team .the-team {
+    overflow: hidden;
+}
+
+.our-team .the-team .person:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+}
+
+.our-team .the-team .person:hover img {
+    filter: none;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+.our-team .the-team .person:hover h3 {
+    color: #333;    
+}
+
+.our-team .the-team .person:hover .fa-facebook {
+    color: #3b5998;    
+}
+
+.our-team .the-team .person:hover .fa-twitter {
+    color: #1da1f2;    
+}
+
+.our-team .the-team .person:hover .fa-google-plus {
+    color: #dd4b39;    
+}
+
+
+
+.our-team .the-team .person {
+    float: left;
+    width: 23%;
+    margin-left: 2%;
+    color: #888;
+}
+
+.our-team .the-team .person img {
+    height: 267px;
+    width: 285px;
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+.our-team .the-team .person i {
+    cursor: pointer;
+}
+
+.our-team .the-team .person p {
+    line-height: 1.5;
+    font-size: 14px;
+}
+/* End Our Team */
+
+
+/* Start Contact  */
+
+.contact {
+    background: url('../images/city.png')  no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 750px;
+    position: relative;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #fff;
+    font-size: 32px;
+    margin-top: 70px;
+}
+
+.contact h2 ~ p {
+    color: #DDD;
+    margin-bottom: 80px;
+}
+
+form {
+    margin-top: 30px;
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+    width: 700px;
+}
+
+form input {
+    width: 49%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+}
+
+
+form input[type="email"] {
+    margin-right: 1%;
+}
+
+form textarea {
+    width: 700px;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+}
+
+form button {
+    background: none;
+    border: 2px solid #DDD;
+    padding: 11px 30px;
+    border-radius: 6px;
+    color: #78e08f;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    float: left;    
+    transition: all .5s ease-in-out;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+form button:hover {
+    background-color: #78e08f;
+    color: #fff ;
+    border: 2px solid #78e08f
+}
+
+form .social-icons {
+    margin-top: 50px;
+    float: right;
+}
+
+form .social-icons i {
+    font-size: 35px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+form .social-icons .fa-facebook {
+    color: #3b5998;  
+    border-radius: 50%;
+}
+
+form .social-icons .fa-twitter {
+    color: #1da1f2;    
+}
+
+form .social-icons .fa-google-plus {
+    color: #dd4b39;    
+}
+
+form .social-icons .fa-instagram {
+    color: #f77737;    
+}
+
+
+
+
+
+/* End Contact  */
+
+/* Start Footer */
+
+footer {
+    background-color: #555;
+    color: #DDD;
+    padding: 25px 0;
+    overflow: hidden;
+}
+
+footer span:first-child {
+    float: left;
+}
+
+footer span:last-child {
+    float: right;
+}
+
+
+/* End Footer */
+
